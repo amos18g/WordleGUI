@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="524.0" prefWidth="688.0" style="-fx-background-color: rgb(2,0,36); -fx-background-radius: 15px; -fx-border-width: 4px; -fx-border-color: black; -fx-border-radius: 15px;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.poyectofinal.HelloController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#4ad041" height="28.0" layoutX="135.0" layoutY="53.0" nodeOrientation="LEFT_TO_RIGHT" stroke="BLACK" strokeDashOffset="5.0" strokeLineCap="ROUND" strokeType="OUTSIDE" width="31.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Rectangle>
+      <Label contentDisplay="TOP" layoutX="238.0" layoutY="42.0" prefHeight="82.0" prefWidth="249.0" text="WORDLE" textAlignment="CENTER" textFill="WHITE" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="Engravers MT" size="42.0" />
+         </font>
+      </Label>
+      <Label fx:id="label1" alignment="CENTER" layoutX="112.0" layoutY="171.0" prefHeight="30.0" prefWidth="33.0" style="-fx-background-color: white;" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="Comic Sans MS" size="20.0" />
+         </font></Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="26.0" layoutX="174.0" layoutY="83.0" nodeOrientation="LEFT_TO_RIGHT" stroke="BLACK" strokeDashOffset="5.0" strokeLineCap="ROUND" strokeType="OUTSIDE" width="31.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="28.0" layoutX="550.0" layoutY="54.0" nodeOrientation="LEFT_TO_RIGHT" stroke="BLACK" strokeDashOffset="5.0" strokeLineCap="ROUND" strokeType="OUTSIDE" width="29.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#11ff00" height="26.0" layoutX="513.0" layoutY="83.0" nodeOrientation="LEFT_TO_RIGHT" stroke="BLACK" strokeDashOffset="5.0" strokeLineCap="ROUND" strokeType="OUTSIDE" width="29.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Rectangle>
+      <Label fx:id="label2" alignment="CENTER" layoutX="174.0" layoutY="171.0" prefHeight="30.0" prefWidth="33.0" style="-fx-background-color: white;" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="Comic Sans MS" size="20.0" />
+         </font></Label>
+      <Label fx:id="label3" alignment="CENTER" contentDisplay="CENTER" layoutX="238.0" layoutY="171.0" prefHeight="30.0" prefWidth="33.0" style="-fx-background-color: white;" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="Comic Sans MS" size="20.0" />
+         </font></Label>
+      <Label fx:id="label4" alignment="CENTER" contentDisplay="CENTER" layoutX="300.0" layoutY="171.0" prefHeight="30.0" prefWidth="33.0" style="-fx-background-color: white;" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="Comic Sans MS" size="20.0" />
+         </font></Label>
+      <Label fx:id="label5" alignment="CENTER" contentDisplay="CENTER" layoutX="362.0" layoutY="171.0" prefHeight="30.0" prefWidth="33.0" style="-fx-background-color: white;" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="Comic Sans MS" size="20.0" />
+         </font></Label>
+      <Button fx:id="btnEnviar" layoutX="471.0" layoutY="293.0" mnemonicParsing="false" onAction="#enviarPalabra" prefHeight="28.0" prefWidth="135.0" text="ENVIAR PALABRA" textFill="#222222">
+         <font>
+            <Font name="Eras Demi ITC" size="12.0" />
+         </font></Button>
+      <TextField fx:id="txtPalabra" alignment="CENTER" layoutX="457.0" layoutY="244.0" prefHeight="30.0" prefWidth="163.0">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="19.0" />
+         </font></TextField>
+      <Button fx:id="btnComprobarPalabra" layoutX="170.0" layoutY="471.0" mnemonicParsing="false" onAction="#comprobarPalabra" style="-fx-background-color: yellow;" text="COMPROBAR PALABRA">
+         <font>
+            <Font name="Eras Demi ITC" size="14.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.53" specularConstant="0.02" specularExponent="6.98" surfaceScale="3.83">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <Label fx:id="label9" alignment="CENTER" contentDisplay="CENTER" layoutX="300.0" layoutY="226.0" prefHeight="30.0" prefWidth="33.0" style="-fx-background-color: white;" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="Comic Sans MS" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="label8" alignment="CENTER" contentDisplay="CENTER" layoutX="238.0" layoutY="226.0" prefHeight="30.0" prefWidth="33.0" style="-fx-background-color: white;" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="Comic Sans MS" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="label7" alignment="CENTER" contentDisplay="CENTER" layoutX="174.0" layoutY="226.0" prefHeight="30.0" prefWidth="33.0" style="-fx-background-color: white;" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="Comic Sans MS" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="label6" alignment="CENTER" layoutX="112.0" layoutY="226.0" prefHeight="30.0" prefWidth="33.0" style="-fx-background-color: white;" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="Comic Sans MS" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="label10" alignment="CENTER" layoutX="362.0" layoutY="226.0" prefHeight="30.0" prefWidth="33.0" style="-fx-background-color: white;" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="Comic Sans MS" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="label16" alignment="CENTER" layoutX="112.0" layoutY="323.0" prefHeight="30.0" prefWidth="33.0" style="-fx-background-color: white;" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="Comic Sans MS" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="label17" alignment="CENTER" layoutX="174.0" layoutY="323.0" prefHeight="30.0" prefWidth="33.0" style="-fx-background-color: white;" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="Comic Sans MS" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="label18" alignment="CENTER" contentDisplay="CENTER" layoutX="238.0" layoutY="323.0" prefHeight="30.0" prefWidth="33.0" style="-fx-background-color: white;" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="Comic Sans MS" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="label19" alignment="CENTER" contentDisplay="CENTER" layoutX="300.0" layoutY="323.0" prefHeight="30.0" prefWidth="33.0" style="-fx-background-color: white;" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="Comic Sans MS" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="label20" alignment="CENTER" contentDisplay="CENTER" layoutX="362.0" layoutY="323.0" prefHeight="30.0" prefWidth="33.0" style="-fx-background-color: white;" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="Comic Sans MS" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="label15" alignment="CENTER" contentDisplay="CENTER" layoutX="362.0" layoutY="277.0" prefHeight="30.0" prefWidth="33.0" style="-fx-background-color: white;" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="Comic Sans MS" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="label14" alignment="CENTER" contentDisplay="CENTER" layoutX="300.0" layoutY="277.0" prefHeight="30.0" prefWidth="33.0" style="-fx-background-color: white;" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="Comic Sans MS" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="label13" alignment="CENTER" contentDisplay="CENTER" layoutX="238.0" layoutY="277.0" prefHeight="30.0" prefWidth="33.0" style="-fx-background-color: white;" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="Comic Sans MS" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="label12" alignment="CENTER" layoutX="174.0" layoutY="277.0" prefHeight="30.0" prefWidth="33.0" style="-fx-background-color: white;" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="Comic Sans MS" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="label11" alignment="CENTER" layoutX="112.0" layoutY="277.0" prefHeight="30.0" prefWidth="33.0" style="-fx-background-color: white;" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="Comic Sans MS" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="label25" alignment="CENTER" contentDisplay="CENTER" layoutX="362.0" layoutY="374.0" prefHeight="30.0" prefWidth="33.0" style="-fx-background-color: white;" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="Comic Sans MS" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="label24" alignment="CENTER" contentDisplay="CENTER" layoutX="300.0" layoutY="374.0" prefHeight="30.0" prefWidth="33.0" style="-fx-background-color: white;" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="Comic Sans MS" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="label23" alignment="CENTER" contentDisplay="CENTER" layoutX="238.0" layoutY="374.0" prefHeight="30.0" prefWidth="33.0" style="-fx-background-color: white;" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="Comic Sans MS" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="label22" alignment="CENTER" layoutX="174.0" layoutY="374.0" prefHeight="30.0" prefWidth="33.0" style="-fx-background-color: white;" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="Comic Sans MS" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="label21" alignment="CENTER" layoutX="112.0" layoutY="374.0" prefHeight="30.0" prefWidth="33.0" style="-fx-background-color: white;" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="Comic Sans MS" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="label26" alignment="CENTER" layoutX="112.0" layoutY="425.0" prefHeight="30.0" prefWidth="33.0" style="-fx-background-color: white;" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="Comic Sans MS" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="label27" alignment="CENTER" layoutX="174.0" layoutY="425.0" prefHeight="30.0" prefWidth="33.0" style="-fx-background-color: white;" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="Comic Sans MS" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="label28" alignment="CENTER" contentDisplay="CENTER" layoutX="238.0" layoutY="425.0" prefHeight="30.0" prefWidth="33.0" style="-fx-background-color: white;" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="Comic Sans MS" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="label29" alignment="CENTER" contentDisplay="CENTER" layoutX="300.0" layoutY="425.0" prefHeight="30.0" prefWidth="33.0" style="-fx-background-color: white;" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="Comic Sans MS" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="label30" alignment="CENTER" contentDisplay="CENTER" layoutX="362.0" layoutY="425.0" prefHeight="30.0" prefWidth="33.0" style="-fx-background-color: white;" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="Comic Sans MS" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="414.0" layoutY="201.0" prefHeight="22.0" prefWidth="249.0" text="INGRESE LA PALABRA AQUI" textAlignment="CENTER" textFill="#4ad041">
+         <font>
+            <Font name="Eras Demi ITC" size="18.0" />
+         </font></Label>
+      <Label fx:id="lbGano" layoutX="464.0" layoutY="341.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="97.0" prefWidth="163.0" text="FELICIDADADES!! HAS GANADO" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP" visible="false" wrapText="true">
+         <font>
+            <Font name="Britannic Bold" size="20.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <effect>
+            <Lighting bumpInput="$null" diffuseConstant="2.0" specularConstant="2.0" specularExponent="0.0" surfaceScale="3.83">
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect></Label>
+      <Label fx:id="lbPerdio" alignment="TOP_LEFT" layoutX="448.0" layoutY="342.0" prefHeight="64.0" prefWidth="182.0" text="     LO SIENTO     HAS PERDIDO!!" textAlignment="CENTER" textFill="RED" textOverrun="CLIP" visible="false" wrapText="true">
+         <font>
+            <Font name="Britannic Bold" size="24.0" />
+         </font></Label>
+      <Label fx:id="lbPerdio1" alignment="TOP_LEFT" layoutX="445.0" layoutY="407.0" prefHeight="36.0" prefWidth="209.0" text="LA PALABRA BUSCADA ERA:" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP" visible="false" wrapText="true">
+         <font>
+            <Font name="Sitka Display Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbPerdio2" alignment="TOP_LEFT" layoutX="511.0" layoutY="437.0" prefHeight="36.0" prefWidth="77.0" text="SSSSS" textAlignment="CENTER" textFill="#11ff00" textOverrun="CLIP" visible="false" wrapText="true">
+         <font>
+            <Font name="Britannic Bold" size="21.0" />
+         </font>
+      </Label>
+      <Separator layoutX="401.0" layoutY="162.0" opacity="0.39" orientation="VERTICAL" prefHeight="297.0" prefWidth="9.0" />
+   </children>
+</AnchorPane>
